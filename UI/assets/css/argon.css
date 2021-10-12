@@ -5653,6 +5653,7 @@ input[type='button'].btn-block
     list-style: none; 
 
     flex-wrap: wrap;
+
 }
 
 .nav-link
@@ -5756,12 +5757,15 @@ input[type='button'].btn-block
     position: relative;
 
     display: flex;
-
-    padding: 1rem 1rem; 
+    
+    /* margin-top: 1rem; */
+    padding: 0.5rem 0.5rem; 
 
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
+    background-color: red;
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -8860,10 +8864,10 @@ button.bg-dark:focus
     background-color: #0a0c0d !important;
 }
 
-.bg-default
+/* .bg-default
 {
     background-color: #172b4d !important;
-}
+} */
 
 a.bg-default:hover,
 a.bg-default:focus,
@@ -10062,18 +10066,18 @@ button.bg-darker:focus
     {
         justify-content: flex-start !important;
     }
-    .justify-content-xl-end
+    /* .justify-content-xl-end
     {
         justify-content: flex-end !important;
-    }
+    } */
     .justify-content-xl-center
     {
         justify-content: center !important;
     }
-    .justify-content-xl-between
+    /* .justify-content-xl-between
     {
         justify-content: space-between !important;
-    }
+    } */
     .justify-content-xl-around
     {
         justify-content: space-around !important;
@@ -10647,7 +10651,7 @@ button.bg-darker:focus
 .mt--8,
 .my--8
 {
-    margin-top: -8rem !important;
+    margin-top: 1.3rem !important;
 }
 
 .mr--8,
@@ -11140,7 +11144,7 @@ button.bg-darker:focus
 .pt-5,
 .py-5
 {
-    padding-top: 3rem !important;
+    padding-top: 0rem !important;
 }
 
 .pr-5,
@@ -11152,7 +11156,7 @@ button.bg-darker:focus
 .pb-5,
 .py-5
 {
-    padding-bottom: 0rem !important;
+    padding-bottom: 1.5rem !important;
 }
 
 .pl-5,
@@ -30706,3 +30710,8 @@ input.datetimepicker[data-color='yellow'] + .bootstrap-datetimepicker-widget.dro
     font-size: large;
     margin-left: 38px;
 }
+
+
+.scrollable-element {
+    scrollbar-color: red yellow; /* red is for the thumb and yellow is for the track */
+  }
