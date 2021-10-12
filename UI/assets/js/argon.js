@@ -2748,3 +2748,25 @@ var Tags = (function() {
 	}
 
 })();
+
+
+// Added by Aniruddha
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > $(window).height()){
+            $(".menu").css({"background-color":"transparent"});   
+        }
+        else{
+            $(".menu").css({"background-color":"white"});
+        }
+
+    })
+})
+
+$(function () {
+	$(document).scroll(function () {
+	  var $nav = $(".navbar-fixed-top");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+  });
